@@ -22,7 +22,7 @@ void RouteEm(string userChoice)
                     utils.AddDriver();
                     break;
                 case "3":
-                    System.Console.WriteLine("goto update rating");
+                    utils.UpdateRating();
                     break;
                 case "4":
                     System.Console.WriteLine("goto fire by ID");

@@ -1,1 +1,1 @@
-[{"ID":"3","Name":"Ian Fry","DateHired":"09/01/2022","Rating":"3"},{"ID":"1","Name":"Chris Crane","DateHired":"08/26/2022","Rating":"4"},{"ID":"0","Name":"Aidan O'Halloran","DateHired":"08/24/2022","Rating":"5"},{"ID":"2","Name":"Jake Douglas","DateHired":"08/14/2022","Rating":"3"}]
+[{"ID":"3","Name":"Ian Fry","DateHired":"09/01/2022","Rating":"3"},{"ID":"1","Name":"Chris Crane","DateHired":"08/26/2022","Rating":"4"},{"ID":"0","Name":"Aidan O'Halloran","DateHired":"08/24/2022","Rating":"2"},{"ID":"2","Name":"Jake Douglas","DateHired":"08/14/2022","Rating":"3"}]

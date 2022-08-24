@@ -48,6 +48,24 @@ namespace capTaxiBackEnd
                 }
             }
 
+            public void UpdateRating(){
+                System.Console.WriteLine("Enter the ID of the driver you want to edit: ");
+                string userInput = Console.ReadLine();
+                Driver driver = FindDriver(userInput);
+                if(driver == null){
+                    System.Console.WriteLine("404 ~~ driver ID not found");
+                }else{
+                    System.Console.WriteLine("Enter new rating: ");
+                    driver.Rating = Console.ReadLine();
+                }
+                SaveToDos();
+            }
+
+            private Driver FindDriver(string searchVal){
+                Driver returnVal = drivers.Find(x => x.ID.ToLower() == searchVal.ToLower());
+                return returnVal;
+            }
+
 
 
 
