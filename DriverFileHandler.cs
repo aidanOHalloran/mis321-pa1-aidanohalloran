@@ -9,13 +9,13 @@ namespace capTaxiBackEnd
         }
 
         private void GetAllDrivers(){
-            string json = File.ReadAllText("input.txt");
+            string json = File.ReadAllText("drivers.txt");
             drivers = JsonConvert.DeserializeObject<List<Driver>>(json);
         }
 
         public void SaveAllDrivers()
             {
-                File.WriteAllText("input.txt", JsonConvert.SerializeObject(drivers));
+                File.WriteAllText("drivers.txt", JsonConvert.SerializeObject(drivers));
             }
     }
 }

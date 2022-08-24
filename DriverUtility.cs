@@ -14,14 +14,35 @@ namespace capTaxiBackEnd
         public void DisplayDrivers()
             {
                 Console.Clear();
-                System.Console.WriteLine("\tID: \t Name: \t\t    DateHired:    DriverRating: \n");
-                foreach(Driver driver in drivers)
+                System.Console.WriteLine("\n\t\t1. Sort by Date Hired\n\t\t2. Sort by Rating\n\t\t3. Home\n");
+                string userInput = Console.ReadLine();
+                if(userInput == "1")
                 {
-                    if(drivers != null){
-                        System.Console.WriteLine(driver.ToString());
+                    SortDriversByDateHired();
+                    System.Console.WriteLine("\tID: \t Name: \t\t    DateHired:    DriverRating: \n");
+                    foreach(Driver driver in drivers)
+                    {
+                        if(drivers != null){
+                            System.Console.WriteLine(driver.ToString());
+                        }
                     }
+                }else if(userInput == "2")
+                {
+                    SortDriversByRating();
+                    System.Console.WriteLine("\tID: \t Name: \t\t    DateHired:    DriverRating: \n");
+                    foreach(Driver driver in drivers)
+                    {
+                        if(drivers != null){
+                            System.Console.WriteLine(driver.ToString());
+                        }
+                    }
+                }else{
+                    System.Console.WriteLine("Bad Entry");
+                    userInput = Console.ReadLine();
                 }
+            
                 System.Console.WriteLine();
+               
             }
         public void AddDriver()
             {
@@ -30,6 +51,13 @@ namespace capTaxiBackEnd
                 Console.ReadLine();
                 int intID = drivers.Count();
                 newDriver.ID = intID.ToString();
+                foreach(Driver driver in drivers)
+                    {
+                        while(newDriver.ID == driver.ID){
+                            intID += 1;
+                            newDriver.ID = intID.ToString();
+                        }
+                    }
                 System.Console.WriteLine($"ID: {newDriver.ID}");
 
                 System.Console.WriteLine("Enter a name: ");
@@ -40,11 +68,16 @@ namespace capTaxiBackEnd
 
                 System.Console.WriteLine("Enter Driver Rating");
                 newDriver.Rating = Console.ReadLine();
-                
-                if(newDriver != null){
+                if(newDriver.Name == "")
+                    newDriver.Name = null;
+
+                if(newDriver.ID != null && newDriver.Name != null && newDriver.Rating != null && newDriver.DateHired != null){
                     drivers.Add(newDriver);
                     SortDriversByDateHired();
-                    SaveToDos();
+                    SaveDrivers();
+                }else{
+                    System.Console.WriteLine("Bad Entry. Press any key to re-start process");
+                    AddDriver();
                 }
             }
 
@@ -58,18 +91,31 @@ namespace capTaxiBackEnd
                     System.Console.WriteLine("Enter new rating: ");
                     driver.Rating = Console.ReadLine();
                 }
-                SaveToDos();
+                SaveDrivers();
             }
+
+            public void DeleteDriver()
+            {
+                System.Console.WriteLine("Enter the id of the driver you want to delete: ");
+                string userInput = Console.ReadLine();
+                Driver driver = FindDriver(userInput); 
+                if(driver == null)
+                    {
+                        System.Console.WriteLine("Driver not found");
+                    }else
+                    {
+                        int index = drivers.IndexOf(driver);
+                        drivers.RemoveAt(index);
+                    }
+                SaveDrivers();
+            }    
 
             private Driver FindDriver(string searchVal){
                 Driver returnVal = drivers.Find(x => x.ID.ToLower() == searchVal.ToLower());
                 return returnVal;
             }
 
-
-
-
-        public void SaveToDos()
+        public void SaveDrivers()
             {
                 fileHandler.SaveAllDrivers();
             }
@@ -77,6 +123,10 @@ namespace capTaxiBackEnd
         public void SortDriversByDateHired()
             {
                 drivers.Sort((x,y) => y.DateHired.CompareTo(x.DateHired));
+            }
+        public void SortDriversByRating()
+            {
+                drivers.Sort((x,y) => y.Rating.CompareTo(x.Rating));
             }
     }
 }

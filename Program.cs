@@ -25,7 +25,7 @@ void RouteEm(string userChoice)
                     utils.UpdateRating();
                     break;
                 case "4":
-                    System.Console.WriteLine("goto fire by ID");
+                    utils.DeleteDriver();
                     break;
                 case "5":
                     System.Console.WriteLine("goto view maint date");
