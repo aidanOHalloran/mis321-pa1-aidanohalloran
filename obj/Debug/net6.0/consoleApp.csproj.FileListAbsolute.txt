@@ -1,0 +1,17 @@
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/bin/Debug/net6.0/consoleApp
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/bin/Debug/net6.0/consoleApp.deps.json
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/bin/Debug/net6.0/consoleApp.runtimeconfig.json
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/bin/Debug/net6.0/consoleApp.dll
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/bin/Debug/net6.0/consoleApp.pdb
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.csproj.AssemblyReference.cache
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.AssemblyInfoInputs.cache
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.AssemblyInfo.cs
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.csproj.CoreCompileInputs.cache
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.csproj.CopyComplete
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.dll
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/refint/consoleApp.dll
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.pdb
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/consoleApp.genruntimeconfig.cache
+/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/obj/Debug/net6.0/ref/consoleApp.dll

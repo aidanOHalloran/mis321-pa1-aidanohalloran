@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wjUOfQLYI5RxTzEW6XZ0giFLzDfA9MXHz4TsW9zG5O8S+ddJi3G3/nvnTPQS9Qr5G07QqV6HmC3ZKQH/KypizQ==",
+  "success": true,
+  "projectFilePath": "/Users/collinohalloranmac/Desktop/aidanohalloran/Desktop/juniorYearBama/bamaFall22/mis321/c#/PA1/capTaxiBackEnd/consoleApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/collinohalloranmac/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
