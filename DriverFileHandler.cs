@@ -9,8 +9,14 @@ namespace capTaxiBackEnd
         }
 
         private void GetAllDrivers(){
+            try{
             string json = File.ReadAllText("drivers.txt");
             drivers = JsonConvert.DeserializeObject<List<Driver>>(json);
+            }catch(Exception ex){
+                System.Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            
         }
 
         public void SaveAllDrivers()
