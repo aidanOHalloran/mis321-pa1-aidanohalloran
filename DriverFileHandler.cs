@@ -12,11 +12,11 @@ namespace capTaxiBackEnd
             try{
             string json = File.ReadAllText("drivers.txt");
             drivers = JsonConvert.DeserializeObject<List<Driver>>(json);
-            }catch(Exception ex){
-                System.Console.WriteLine($"Error: {ex.Message}");
-            }
-
-            
+            } catch (Exception e)
+                {
+                    Console.WriteLine($"The file was not found: '{e.Message}'");
+                }
+                    
         }
 
         public void SaveAllDrivers()
